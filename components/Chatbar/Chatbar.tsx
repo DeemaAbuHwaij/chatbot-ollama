@@ -170,7 +170,8 @@ export const Chatbar = () => {
       <Sidebar<Conversation>
         side={'left'}
         isOpen={showChatbar}
-        addItemButtonTitle="💬 New Chat"
+        addItemButtonTitle={t('New chat')}
+        ''
         itemComponent={<Conversations conversations={filteredConversations} />}
         folderComponent={<ChatFolders searchTerm={searchTerm} />}
         items={filteredConversations}
@@ -187,3 +188,6 @@ export const Chatbar = () => {
     </ChatbarContext.Provider>
   );
 };
+
+//addItemButtonTitle="💬 New Chat"
+
