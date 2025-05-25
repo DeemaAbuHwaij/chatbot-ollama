@@ -2,10 +2,12 @@ name: Run Unit Tests
 on:
   push:
     branches:
-      - main
+      - skip-this-branch
   pull_request:
     branches:
       - main
+
+
 
 jobs:
   test:

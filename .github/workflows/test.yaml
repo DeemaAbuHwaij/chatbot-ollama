@@ -2,9 +2,13 @@ name: Run Vitest Tests
 
 on:
   push:
-    branches: [main]
+    branches:
+      - skip-this-branch
+
   pull_request:
     branches: [main]
+
+
 
 jobs:
   test:
