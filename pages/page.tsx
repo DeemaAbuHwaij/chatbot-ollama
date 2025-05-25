@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 export default function OutfitForm() {
   const [outfit, setOutfit] = useState('');
   const [gender, setGender] = useState('');
-  const [occasion, setOccasion] = useState('');
+  const [event, setEvent] = useState('');
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState('');
   const router = useRouter();
@@ -17,7 +17,7 @@ export default function OutfitForm() {
     const formattedPrompt = `
 👤 Gender: ${gender}
 
-📅 Occasion: ${occasion}
+📅 Event: ${event}
 
 🧥 Outfit description: ${outfit}`;
 
@@ -76,17 +76,17 @@ export default function OutfitForm() {
           </div>
 
           <div>
-            <label htmlFor="occasion" className="block text-sm font-medium text-gray-700 dark:text-gray-200">
-              Occasion
+            <label htmlFor="event" className="block text-sm font-medium text-gray-700 dark:text-gray-200">
+              Event
             </label>
             <select
-              id="occasion"
-              value={occasion}
-              onChange={(e) => setOccasion(e.target.value)}
+              id="event"
+              value={event}
+              onChange={(e) => setEvent(e.target.value)}
               required
               className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-md dark:bg-[#40414F] dark:border-gray-600 dark:text-white"
             >
-              <option value="">Select occasion</option>
+              <option value="">Select event</option>
               <option value="wedding">Wedding</option>
               <option value="work">Work</option>
               <option value="casual">Casual</option>
