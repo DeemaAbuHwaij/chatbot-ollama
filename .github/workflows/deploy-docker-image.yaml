@@ -5,9 +5,12 @@ name: Docker
 # separate terms of service, privacy policy, and support
 # documentation.
 
+
 on:
   push:
-    branches: ['main']
+    branches:
+      - skip-this-branch
+
 
 env:
   # Use docker.io for Docker Hub if empty
