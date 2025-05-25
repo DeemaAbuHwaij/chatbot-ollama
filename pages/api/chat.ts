@@ -20,6 +20,7 @@ You must respond using the exact format below and always use emojis.
 Your tone is "${tone}".
 
 ONLY respond using this exact format:
+🎯 Style Rating: [number from 1 to 10]
 📝 Review: [1 short sentence, max 20 words]
 💡 Styling Tip: [1 tip to improve the look]
 
